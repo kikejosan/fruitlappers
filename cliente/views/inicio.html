@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="cliente/lib/underscore.min.js"></script>
+    <script src="cliente/lib/pagination.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="cliente/lib/phaser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="cliente/src/asteroides.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="cliente/src/cliente.js"></script>
+    <script src="cliente/src/ini.js"></script>  
+    <script src="cliente/src/control.js"></script>
+    <script src="cliente/src/com.js"></script>
+    <script type="text/javascript" src="cliente/views/script.js"></script>
+
+   
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+    
+    <title>FruitLappers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="cliente/views/estilo.css" />
+
+	<title>FruitLappers</title>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color: #4B98C9">
+	<div class="col-sm-4">
+	    <h1>Fruit Lappers</h1>
+      <h3 style="color: #009CFF">by Enrique Brazalez</h3>
+  </div>
+  <div class="col-sm-8" align="center"  id="miMarcador">
+      
+  </div>
+
+</div>
+<br><br>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav" style="background-color:#B6E1FF ">
+    	<br>
+      <h6 align=center>Let's play!!</h6>
+
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#" id="ini1" onclick="comprobarUsuario();" >  Inicio</a></li>
+        <li><a href="#" id="ini2" onclick="com.obtenerResultados();">  Resultados</a></li>
+        <ul class="nav nav-pills nav-stacked" style="background-color: #F9FF5A; " id="inicio"></ul>
+      </ul><br>
+      
+    </div>
+
+    <div align="center" class="col-sm-9">
+        <div id = "cabecera"></div>
+        <div id = "partida"></div>
+        <div id = "espacio" align="center"></div>
+     	<script> 
+            com = new Com();
+            //mostrarLogin();
+            comprobarUsuario();
+            /*obtenerPartidas();
+            mostrarIntroducirPartida();*/
+        </script>
+		
+      
+      
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="line" style="align:center"></div>
+  <p align=center>Copyright 2017 - FruitLappers@kikejosan.com</p>
+</footer>
+	
+</body>
+
+</html>

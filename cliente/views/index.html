@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="cliente/lib/phaser.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="cliente/src/asteroides.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <script src="cliente/src/cliente.js"></script>
+        <script src="cliente/src/ini.js"></script>  
+        <script src="cliente/src/control.js"></script>
+        <script src="cliente/src/com.js"></script>
+
+        <script type="text/javascript" src="cliente/views/script.js"></script>
+       
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        
+        <title>FruitLappers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="cliente/views/styles.css" />
+
+    </head>
+    
+    <body style="background-color:#355664;">
+
+         <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" id="ini1" onclick="comprobarUsuario();">Inicio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#" id="ini2" onclick="com.obtenerResultados();">Resultados</a></li>
+          <!--<li><a href="#" id="resul"></a> </li>-->
+          <!--<li><a href="#" onclick="mostrarActualizarEliminar();">Modificar perfil</a></li>
+          <li><a href="#" onclick="reset();">Salir</a></li>-->
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="inicio">
+        </ul>
+      </div>
+    </nav>
+ 
+    	<div class="section" id="page"> 
+    
+            <div class="header"> 
+
+                <h1>Fruit Lappers</h1>
+                <h3 style="color: #009CFF">by Enrique Brazalez</h3>
+                                           
+            </div>
+           
+            <div class="section" id="articles"> 
+                <div  class="line"></div>  
+                
+                <div class="article" id="article1">   
+                                                                         
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear" id="cuerpo">
+                        <div id = "cabecera"></div>
+                        <div id = "partida"></div>
+                        <div id = "espacio" align="center"></div>
+                        <script> 
+                            com = new Com();
+                            //mostrarLogin();
+                            comprobarUsuario();
+                            /*obtenerPartidas();
+                            mostrarIntroducirPartida();*/
+                        </script>
+
+                    	<div id="pepe" class="figure"> 
+	                    	<a id="fotillo">
+                                <img src="cliente/recursos/frutasAsesinas.jpg" width="900" height="680" alt="Image one" />
+                            </a>	
+                        </div> 
+                        
+                       
+                                            
+                    </div>
+                </div>
+            </div>
+        <div class="footer"> 
+          <div class="line"></div>
+           <p>Copyright 2017 - FruitLappers@kikejosan.com</p>
+        </div>
+            
+		</div> 
+        
+        
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+    
